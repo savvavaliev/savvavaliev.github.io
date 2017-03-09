@@ -1,0 +1,46 @@
+.flex-container {
+	height: 300px;
+	background-color: #aeaeae;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+}
+.box {
+	height: 50px;
+	background-color: green;
+	-webkit-flex-basis: 50px;
+	-moz-flex-basis: 50px;
+	-ms-flex-basis: 50px;
+	-o-flex-basis: 50px;
+	flex-basis: 50px;
+	text-align: center;
+}
+.div-1 {
+	background-color: red;
+}
+.div-2 {
+	background-color: orange;
+}
+.div-3 {
+	background-color: yellow;
+}
+.div-4 {
+	background-color: green;
+}
+.div-5 {
+	background-color: blue;
+}
