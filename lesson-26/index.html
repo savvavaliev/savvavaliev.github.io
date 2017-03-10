@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>26 урок</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключаем API Яндекс карт внутри тега head -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <header id="main">
+      <div class="container">
+        <div class="row main_head">
+          <div class="col-xs-6 main_logo">
+            <div class="main_logo_border">
+              <p><span class="color_logo">S</span>mart</p>
+            </div>
+          </div>
+          <div class="col-xs-6 main_nav">
+            <a class="main_nav_bar" href="#">
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="row main_text">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h1 class="wow pulse"><span>Smart</span> Agency Landing Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
+            <div class="main_form">
+              <p class="main_form_header"><span>Send</span> A Message</p>
+              <!-- <form action="smart.php" method="POST"> -->
+              <!-- <form id="main_form_ajax" action="#"> -->
+              <form id="main_form" action="#">
+               <!--  <input type="hidden" name="whatever" value="Главная форма"> -->
+                <input id="userName" type="text" placeholder="Your Name">
+                <input id="phone" type="tel" placeholder="Your Phone">
+                <textarea placeholder="Your Message" rows="3"></textarea>
+                <button id="submit_form" class="main_form_btn" type="submit">Send Message <span>&rarr;</span></button>
+              </form>
+            </div> <!-- /main_form -->
+          </div> <!-- /col-lg-4 -->
+        </div> <!-- /row -->
+      </div> <!-- /container -->
+    </header>
+
+  <section id="process">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 section_header process_section text-center">
+          <h2 class="wow pulse"><span>Working</span> Process</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi mollitia quidem earum error deleniti.</p>
+        </div>
+      </div> <!-- /row -->
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="process_box wow fadeInLeft box_tomi" data-wow-delay="0.2s">
+            <i class="fa fa-magnet"></i>
+            <h4>
+              Koc Koi Tomi
+            </h4>
+            <p>Lorem ipsum is dummy lorem very dumy</p>
+             <!-- <button data-toggle="modal" data-target="#modal-1" class="footer_btn">Contact Us</button> -->
+
+            <button data-toggle="modal" data-target="#modal-1" class="process_btn"><span class="btn_plus"></span>Know More</button>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="process_box wow fadeInLeft box_koimona" data-wow-delay="0.4s">
+            <i class="fa fa-bug"></i>
+            <h4>
+              Koimona Set
+            </h4>
+            <p>Lorem ipsum is dummy lorem very dumy</p>
+            <button data-toggle="modal" data-target="#modal-2" class="process_btn"><span class="btn_plus"></span>Know More</button>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="process_box wow fadeInLeft box_koire" data-wow-delay="0.6s">
+            <i class="fa fa-gears"></i>
+            <h4>
+              Setting Koire
+            </h4>
+            <p>Lorem ipsum is dummy lorem very dumy</p>
+            <button data-toggle="modal" data-target="#modal-3" class="process_btn"><span class="btn_plus"></span>Know More</button>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="process_box wow fadeInLeft box_lara" data-wow-delay="0.8s">
+            <i class="fa fa-camera-retro"></i>
+            <h4>
+              Ko Image Lara
+            </h4>
+            <p>Lorem ipsum is dummy lorem very dumy</p>
+            <button data-toggle="modal" data-target="#modal-4" class="process_btn"><span class="btn_plus"></span>Know More</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /container -->
+  </section>
+
+  <section id="works">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 section_header text-center">
+          <h2 class="wow pulse"><span>Featured</span> Works</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+        </div>
+      </div>
+      <div class="row row_work" data-wow-delay="1s">
+        <div class="col-md-4 col-sm-4">
+          <div class="works_box wow fadeInLeft">
+            <img src="img/works/1.jpg" alt="Описание картинки">
+            <div class="signature">
+              <div class="sign">
+                <p>Work #1</p>
+                <button data-toggle="modal" data-target="#modal-21">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="works_box wow fadeInDown">
+            <img src="img/works/1.jpg" alt="Описание картинки">
+            <div class="signature">
+              <div class="sign">
+                <p>Work #2</p>
+                <button data-toggle="modal" data-target="#modal-22">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="works_box wow fadeInRight">
+            <img src="img/works/1.jpg" alt="Описание картинки">
+            <div class="signature">
+              <div class="sign">
+                <p>Work #3</p>
+                <button data-toggle="modal" data-target="#modal-23">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /row -->
+      <div class="row row_work" data-wow-delay="1s">
+        <div class="col-md-4 col-sm-4">
+          <div class="works_box wow bounceInLeft" data-wow-duration="3s">
+            <img src="img/works/1.jpg" alt="Описание картинки">
+            <div class="signature">
+              <div class="sign">
+                <p>Work #4</p>
+                <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="works_box wow bounceInLeft" data-wow-duration="3s">
+            <img src="img/works/1.jpg" alt="Описание картинки">
+            <div class="signature">
+              <div class="sign">
+                <p>Work #5</p>
+                <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="works_box wow bounceInLeft" data-wow-duration="3s">
+            <img src="img/works/1.jpg" alt="Описание картинки">
+            <div class="signature">
+              <div class="sign">
+                <p>Work #6</p>
+                <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /row -->
+      <div class="row row_work" data-wow-delay="2s">
+        <div class="col-md-4 col-sm-4">
+          <div class="works_box wow fadeInLeft">
+            <img src="img/works/1.jpg" alt="Описание картинки">
+            <div class="signature">
+              <div class="sign">
+                <p>Work #7</p>
+                <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="works_box wow fadeInUp">
+            <img src="img/works/1.jpg" alt="Описание картинки">
+            <div class="signature">
+              <div class="sign">
+                <p>Work #8</p>
+                <button>Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="works_box wow fadeInRight">
+            <img src="img/works/1.jpg" alt="Описание картинки">
+            <div class="signature">
+              <div class="sign">
+                <p>Work #9</p>
+                <button>Visit Gallery</button>
+              </div>
+            </div> <!-- /signature -->
+          </div>
+        </div>
+      </div> <!-- /row -->
+    </div>
+  </section>
+
+  <section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 section_header text-center">
+        <h2 class="wow pulse"><span>Services</span> We Provide</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2">
+        <ul class="services_list" role="tablist">
+          <li role="presentation" class="services_list_item wow fadeInLeft" data-wow-delay="0.1s"><a href="#app" aria-controls="app" role="tab" data-toggle="tab"><img src="img/services/1.png" alt="1"></a></li>
+          <li role="presentation" class="services_list_item wow fadeInLeft" data-wow-delay="0.3s"><a href="#web" aria-controls="web" role="tab" data-toggle="tab"><img src="img/services/2.png" alt="2"></a></li>
+          <li role="presentation" class="services_list_item wow fadeInLeft" data-wow-delay="0.5s"><a href="#play" aria-controls="play" role="tab" data-toggle="tab"><img src="img/services/3.png" alt="3"></a></li>
+          <li role="presentation" class="services_list_item wow fadeInLeft" data-wow-delay="0.7s"><a href="#global" aria-controls="global" role="tab" data-toggle="tab"><img src="img/services/4.png" alt="4"></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-10">
+        <div class="services_info tab-content">
+          <div role="tabpanel" id="app" class="row tab-pane fade in active">
+            <div class="col-lg-8">
+                <h4>
+                  Modern App Design
+                </h4>
+                <span class="services_line"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                <button data-toggle="modal" data-target="#modal-31" class="services_btn"><span class="btn_plus"></span>Know More</button>
+              </div>
+              <div class="col-lg-4">
+                <img class="img-responsive wow slideInRight" src="img/services/info-1.png" alt="часы" data-wow-duration="1s">
+              </div>
+          </div> <!-- /row -->
+
+          <div role="tabpanel" id="web" class="row tab-pane fade">
+            <div class="col-lg-8">
+                <h4>
+                  Modern Web Design
+                </h4>
+                <span class="services_line"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ducimus fuga, est iste, voluptas quibusdam quas aperiam. Nobis error necessitatibus, animi similique fuga cupiditate dolor exercitationem esse, neque maxime soluta! <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore possimus dolorem, quidem deserunt consequatur obcaecati atque?</p>
+                <button class="services_btn"><span class="btn_plus"></span>Know More</button>
+              </div>
+              <div class="col-lg-4">
+                <img class="img-responsive" src="img/services/info-1.png" alt="часы">
+              </div>
+          </div> <!-- /row -->
+
+          <div role="tabpanel" id="play" class="row tab-pane fade">
+            <div class="col-lg-8">
+                <h4>
+                  Modern Play Design
+                </h4>
+                <span class="services_line"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eos deserunt voluptas est atque illo sapiente id, odio vero sequi maxime minima hic ducimus rem quas magnam praesentium? Quod, quibusdam. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam tempora quasi explicabo ad, voluptates veritatis corrupti.</p>
+                <button class="services_btn"><span class="btn_plus"></span>Know More</button>
+              </div>
+              <div class="col-lg-4">
+                <img class="img-responsive" src="img/services/info-1.png" alt="часы">
+              </div>
+          </div> <!-- /row -->
+
+          <div role="tabpanel" id="global" class="row tab-pane fade">
+            <div class="col-lg-8">
+                <h4>
+                  Modern Global Design
+                </h4>
+                <span class="services_line"></span>
+                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Родного строчка пояс залетают пунктуация жизни щеке грустный жаренные от всех великий раз себя, вскоре маленькая путь, не путь вопроса деревни. <br> <br> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Необходимыми рыбными страна вопроса. Буквоград, заголовок..</p>
+                <button class="services_btn"><span class="btn_plus"></span>Know More</button>
+              </div>
+              <div class="col-lg-4">
+                <img class="img-responsive" src="img/services/info-1.png" alt="часы">
+              </div>
+          </div> <!-- /row -->
+        </div> <!-- /services_info -->
+      </div> <!-- /col-lg-10 -->
+    </div>
+  </div>
+  </section>
+
+  <section id="FAQ">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 section_header text-center">
+        <h2 class="wow pulse"><span>Frequently</span> Asked Questions</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, tenetur, deleniti!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Collapsible Group Item #1
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Collapsible Group Item #2
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div> <!-- /accord -->
+      </div> <!-- /col-lg-12 -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+  </section> 
+  
+  <section id="feedback">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 section_header text-center">
+        <h2 class="wow pulse"><span>Clients</span> Said</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="feedback_slider">
+          <div class="feedback_slider_item text-center">
+            <div class="feedback_box">
+              <img class="img-circle feedback_img center-block" src="img/feedback/1.jpg" alt="Mike">
+              <div class="feedback_shadow">
+                <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p><span>Kita Say</span> HK Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback_slider_item text-center">
+            <div class="feedback_box">
+              <img class="img-circle feedback_img center-block" src="img/feedback/2.jpg" alt="Mike">
+              <div class="feedback_shadow">
+                <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p><span>Bob Smith</span> UX Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback_slider_item text-center">
+            <div class="feedback_box">
+              <img class="img-circle feedback_img center-block" src="img/feedback/1.jpg" alt="Mike">
+              <div class="feedback_shadow">
+                <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p><span>Kita Say</span> HK Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback_slider_item text-center">
+            <div class="feedback_box">
+              <img class="img-circle feedback_img center-block" src="img/feedback/2.jpg" alt="Mike">
+              <div class="feedback_shadow">
+                <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p><span>Kita Say</span> HK Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback_slider_item text-center">
+            <div class="feedback_box">
+              <img class="img-circle feedback_img center-block" src="img/feedback/2.jpg" alt="Mike">
+              <div class="feedback_shadow">
+                <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p><span>Kita Say</span> HK Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback_slider_item text-center">
+            <div class="feedback_box">
+              <img class="img-circle feedback_img center-block" src="img/feedback/1.jpg" alt="Mike">
+              <div class="feedback_shadow">
+                <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p><span>Kita Say</span> HK Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  
+  <!-- Карты --> 
+
+  <!-- яндекс карта -->
+  <section id="maps1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 section_header text-center">
+        <h2 class="wow pulse"><span>Yandex</span> Maps</h2>
+      </div>
+    </div>
+  </div>
+  <!-- Создаем div с id map в теле документа bofy -->
+  <div id="map" style="width: 100%; height: 400px; padding-right: 5px; padding-left: 5px;"></div>
+  </section>
+
+
+  <!-- гугл карта -->
+  <section id="maps2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 section_header text-center">
+        <h2 class="wow pulse"><span>Google</span> Maps</h2>
+      </div>
+    </div>
+  </div>
+  <div id="google">
+  
+    <iframe style="pointer-events: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.588699300133!2d55.94662931508917!3d54.71685907887382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d93a56c28fb463%3A0xc9968ca1e83fabd3!2z0YPQuy4g0KbRjtGA0YPQv9GLLCA0LCDQo9GE0LAsINCg0LXRgdC_LiDQkdCw0YjQutC-0YDRgtC-0YHRgtCw0L0sIDQ1MDA1Nw!5e0!3m2!1sru!2sru!4v1489128826368" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <script>
+  scroll=false;
+  </script>
+  </div>
+  </section>
+
+
+  <footer id="footer">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-lg-12 text-center">
+  				<!-- след строка - окно от bootstrap -->
+  				<!-- <button data-toggle="modal" data-target="#modal-1" class="footer_btn">Contact Us</button> -->
+  				<a href="#0" id="modal-trigger" data-type="cd-modal-trigger">
+  					<button class="footer_btn">Contact Us</button>
+  				</a>
+  			</div>
+  		</div>
+  	</div>
+  </footer>
+
+
+<!--   <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section id="test">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="box">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+  <!-- modals -->
+
+<!--   Модальное (всплывающее) окно без JavaScript
+<div id="popup-1" class="popup_overlay">
+	<div class="popup">
+		<a class="popup_close" href="#close">&times;</a>
+		<p>первое окно</p>
+	</div>
+</div>
+/.popup_overlay
+Модальное (всплывающее) окно без JavaScript
+<div id="popup-2" class="popup_overlay">
+	<div class="popup">
+		<a class="popup_close" href="#close">&times;</a>
+		<p>второе окно</p>
+	</div>
+</div>
+/.popup_overlay -->
+
+
+
+
+	<!-- всплывающие окна от bootstrap -->
+
+
+	<!-- <section id="process"> -->
+
+	<!-- modal-1 -->
+	<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Koc Koi Tomi</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam asperiores eligendi hic id saepe dolor velit distinctio fugiat adipisci accusamus officiis quas, perferendis voluptatem. Deserunt aperiam similique cumque reiciendis rem pariatur fuga, iure et quaerat distinctio aliquam neque quos totam ex delectus voluptates beatae fugit enim odio consequuntur inventore autem perferendis. Qui pariatur error ipsum rerum nihil unde cupiditate numquam sed amet fuga sint, accusamus ducimus harum earum hic. Saepe, autem, velit! Iure adipisci necessitatibus iusto quia mollitia earum doloribus hic quibusdam totam laborum at sapiente enim voluptatum aut non corporis veritatis cumque, ab ratione nemo. Voluptates architecto maiores animi.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- modal-2 -->
+	<div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Koimona Set</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nam dolor optio facere, atque vel perferendis, molestiae magni doloribus odit libero unde maxime temporibus corporis repellendus natus porro iure odio illum voluptatum. Incidunt illum, libero quo, saepe quas culpa aperiam minima eligendi est perferendis amet voluptas magnam, hic explicabo ipsum. Ad quibusdam in quisquam repellat similique amet facilis natus, recusandae dignissimos culpa molestias exercitationem cum ut voluptates consectetur sequi suscipit error excepturi aut reiciendis neque laborum corporis incidunt iusto perspiciatis! Et, consequatur, aperiam. Molestiae voluptatum accusantium est iure laborum minus.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- modal-3 -->
+	<div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Setting Koire</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sunt hic ab quasi provident, distinctio quidem quia cupiditate dicta ipsa tempora debitis aut blanditiis commodi id repellendus, nihil consequatur animi. Officia corrupti quasi aut, rerum voluptatem temporibus ad iusto voluptatum quidem accusantium accusamus vel numquam est cum omnis cumque error, sapiente veniam, voluptatibus aliquid praesentium quis. Commodi tempora hic, dignissimos tenetur tempore, ad earum sapiente doloribus exercitationem asperiores distinctio necessitatibus iure architecto sint nemo incidunt, perferendis ipsum laudantium! Tenetur dolor, doloribus quo earum. Modi, sunt cupiditate eum accusamus ratione, obcaecati et sapiente est minima id.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- modal-4 -->
+	<div class="modal fade" id="modal-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Ko Image Lara</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit consequuntur totam accusamus, molestias excepturi hic quis amet exercitationem quibusdam eius eaque! Voluptate dolorem obcaecati delectus ut earum culpa, rem omnis est fugit nobis totam sunt nam, nisi tempore commodi porro quam eos incidunt aperiam magnam distinctio modi! Aperiam expedita ab provident accusantium, quibusdam dolores illum beatae enim aliquid consequatur, culpa eos minima fuga quasi accusamus tempora est quis praesentium quam ipsum id. Adipisci laudantium, obcaecati dolore minus aliquam, voluptate incidunt veritatis, repudiandae eligendi laboriosam mollitia atque, facilis quos.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+	<!-- <section id="works"> -->
+
+	<!-- modal-21 -->
+	<div class="modal fade" id="modal-21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title text-center" id="myModalLabel">Work #1</h4>
+	      </div>
+	      <div class="modal-body bs_modal">
+	      	<img class="bs_modal_img" src="img/works/1.jpg" alt="">
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consectetur harum! Quam ab fugiat accusamus saepe, rem nam harum possimus odit libero. Eos ut illo laborum ab fugit voluptatibus animi architecto placeat neque odio at vel quasi, aperiam rerum ea nisi non minima! Cupiditate natus praesentium, minima neque. Eos, numquam. Nulla dignissimos quas aliquam eius alias labore doloremque dicta modi, nesciunt sequi.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- modal-22 -->
+	<div class="modal fade" id="modal-22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title text-center" id="myModalLabel">Work #2</h4>
+	      </div>
+	      <div class="modal-body bs_modal">
+	      	<img class="bs_modal_img" src="img/works/1.jpg" alt="">
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nam dolor optio facere, atque vel perferendis, molestiae magni doloribus odit libero unde maxime temporibus corporis repellendus natus porro iure odio illum voluptatum. Incidunt illum, libero quo, saepe quas culpa aperiam minima eligendi est perferendis amet voluptas magnam, hic explicabo ipsum. Ad quibusdam in quisquam repellat similique amet facilis natus, recusandae dignissimos culpa molesteiciendis neque laborum corporis incidunt iusto perspiciatis! Et, consequatur, aperiam. Molestiae voluptatum accusantium est iure laborum minus.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- modal-23 -->
+	<div class="modal fade" id="modal-23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title text-center" id="myModalLabel">Work #3</h4>
+	      </div>
+	      <div class="modal-body bs_modal">
+	      	<img class="bs_modal_img" src="img/works/1.jpg" alt="">
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sunt hic ab quasi provident, distinctio quidem quia cupiditate dicta ipsa tempora debitis aut blanditiis commodi id repellendus, nihil consequatur animi. Officia corrupti quasi aut, rerum voluptatem temporibus ad iusto voluptatum quidem accusantium a praesentium quis. Commodi tempora hic,  exercitationem asperiores distinctio necessitatibus iure architecto sint nemo incidunt, perferendis ipsum laudantium! Tenetur dolor, doloribus quo earum. Modi, sunt cupiditate eum accusamus ratione, obcaecati et sapiente est minima id.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	
+	<!-- <section id="services"> -->
+
+	<!-- modal-31 -->
+	<div class="modal fade" id="modal-31" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title text-center" id="myModalLabel">Modern App Design</h4>
+	      </div>
+	      <div class="modal-body bs_modal">
+	      	<img class="bs_modal_img" src="img/services/info-1.png" alt="">
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sunt hic ab quasi provident, distinctio quidem quia cupiditate dicta ipsa tempora debitis aut blanditiis commodi id repellendus, nihil consequatur animi. <br> Commodi tempora hic,  exercitationem asperiores distinctio necessitatibus iure architecto sint nemo incidunt, perferendis ipsum laudantium! Tenetur dolor, doloribus quo earum. <br>Modi, sunt cupiditate eum accusamus ratione, obcaecati et sapiente est minima id.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!-- /* - - - - - - - - - - - - - - - - - - - - -  */ -->
+  <!-- modal_thanks -->
+  <div class="modal fade" id="modal_thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Спасибо!</h4>
+        </div>
+        <div class="modal-body">
+          <p>За Вами уже выехали</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- /* - - - - - - - - - - - */ -->
+  <!-- modal_555 -->
+  <div class="modal fade" id="modal-555" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Спасибо<span id="nameUser"></span></h4>
+        </div>
+        <div class="modal-body">
+          <p>За Вами уже выехали</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+	<!-- красивое окно -->
+
+	<div class="cd-modal" data-modal="modal-trigger">
+			<div class="cd-svg-bg" 
+			data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
+			data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
+			data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
+			data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
+			data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
+			data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+				<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+					<title>SVG Modal background</title>
+					<path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+					<path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+					<path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+				</svg>
+			</div>
+
+			<div class="cd-modal-content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+				</p>
+			</div> <!-- cd-modal-content -->
+
+			<a href="#0" class="modal-close">Close</a>
+		</div> <!-- cd-modal -->
+
+		<div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
+
+
+  <div class="overlay_nav">
+    <span class="close_nav">&times;</span>
+    <ul>
+      <li><a href="">Главная</a></li>
+      <li><a href="">Портфолио</a></li>
+      <li><a href="">Карта</a></li>
+      <li><a href="">Цены</a></li>
+      <li><a href="">Контакты</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/snap.svg-min.js"></script>
+	 <script src="js/main.js"></script> <!-- Resource jQuery -->
+   <script src="js/wow.min.js"></script>
+   <script>
+     new WOW().init();
+   </script>
+
+    <script>
+      $(document).ready(function(){
+        $('.feedback_slider').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            //arrows: true;
+            prevArrow: '<i class="fa feedback_slider_arrows arrow_left fa-chevron-left"></i>',
+            nextArrow: '<i class="fa feedback_slider_arrows arrow_right fa-chevron-right"></i>',
+            dots: true,
+            responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 0,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        $("#main_form_ajax").submit(function() {
+          $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: $(this).serialize()
+          }).done(function() {
+            $(this).find("input").val("");
+            $('#modal_thanks').modal('show');
+            $("#main_form_ajax").trigger("reset");
+          });
+          return false;
+        });
+    });
+    </script>
+
+    <script> 
+    $(document).ready(function() {
+      var $nav = $('a.main_nav_bar');
+      $nav.click(function() {
+        $('.overlay_nav').show();
+      })
+      $('.close_nav').click(function() {
+        $('.overlay_nav').hide();        
+      })
+    })
+    </script>
+    
+    <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script>
+      jQuery(function($){
+         $("#phone").mask("+7 (999) 999-99-99");
+      });
+    </script>
+
+
+<!-- для телефона(работает) -->
+<!--   <script> 
+$(document).ready(function() {
+  $('#submit_form').click(function() {
+    if ($('input#phone').val() != '') {
+      $('#main_form').submit();
+    } 
+    else {
+      alert('Вы не заполнили поле ТЕЛЕФОН');
+    }
+  })
+})
+</script>  -->
+
+    <script> 
+    $(document).ready(function() {
+      $('#submit_form').click(function() {
+        if ($('input#userName').val() != '') {
+          $('span#nameUser').text(', ' + $('input#userName').val())
+          $('#modal-555').modal('show');
+        }
+      else {
+        alert('Вы не заполнили поле ИМЯ');
+      }
+      })
+    })
+    </script>
+
+    <!-- Настраиваем карту через JavaScript -->
+    <script type="text/javascript">
+    //создаем переменные "Карта" и "Метка"
+      ymaps.ready(init);
+      var myMap, 
+      myPlacemark;
+
+    //Инициализируем нашу карту, задав ей координаты, устанавливаем масштаб карты
+      function init(){ 
+        myMap = new ymaps.Map("map", {
+          center: [54.716845, 55.948864],
+          zoom: 16,
+        }); 
+
+    //Пишем свойства для нашей метки
+        myPlacemark = new ymaps.Placemark([54.716845, 55.948864], {
+          hintContent: 'Тебе нужно зайти сюда...',
+          balloonContent: 'Поднимись на 2 этаж и в квартире 13 ты найдешь следующее задание...'
+        }, {
+                // Опции.
+                // Необходимо указать данный тип макета. Показываем что это изображение.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки. Указываем путь до картинки
+                iconImageHref: 'img/metka2_map.png',
+                // Размеры метки. 
+                iconImageSize: [150, 150],
+                // Смещение левого верхнего угла иконки относительно её "ножки" (точки привязки).
+                iconImageOffset: [-19, -150]
+              });            
+        //Добавляем метку на карту + убираем скролл мышкой 
+        myMap.geoObjects.add(myPlacemark);  
+        myMap.behaviors.disable('scrollZoom');
+      }
+    </script>
+
+  </body>
+</html>
